@@ -1,1 +1,1 @@
-# formatio-django-on-ubuntu
+# Django Deployment Workflow
