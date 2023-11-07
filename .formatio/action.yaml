@@ -32,7 +32,7 @@ jobs:
   deploy:
     steps:
       - name: Start App with pm2
-        run: cd cd venv/bin/ && pm2 start "~/code/venv/bin/python3 manage.py runserver"
+        run: pm2 start "~/code/venv/bin/python3 manage.py runserver"
 
       - name: Save pm2 config
         run: pm2 save
