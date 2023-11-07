@@ -24,15 +24,15 @@ jobs:
         run: python3 -m venv venv
 
       - name: Install depenendencies in virtual env
-        run: cd venv/bin/ && pip install -r requirements.txt
+        run: ~/code/venv/bin/pip3 install -r requirements.txt
 
       - name: Run migrations
-        run: cd venv/bin/ && python3 manage.py migrate
+        run: ~/code/venv/bin/python3 manage.py migrate
 
   deploy:
     steps:
       - name: Start App with pm2
-        run: cd cd venv/bin/ && pm2 start "python3 manage.py runserver"
+        run: cd cd venv/bin/ && pm2 start "~/code/venv/bin/python3 manage.py runserver"
 
       - name: Save pm2 config
         run: pm2 save
