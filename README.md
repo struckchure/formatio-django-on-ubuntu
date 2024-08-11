@@ -1,1 +1,1 @@
-# formatio-django-on-ubuntu
+# Formatio Django on Ubuntu
