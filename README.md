@@ -1,1 +1,1 @@
-# Formatio Django on Ubuntu
+# Django Deployed on Ubuntu, With Formatio
